@@ -1,12 +1,15 @@
-
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 trigger:
-- '*'
+   - '*'
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
   dotnetSdkVersion: '3.1.100'
 #-----Build Stage ---
-  stages:
+stages:
     - stage: 'Build'
       displayName: 'Build the web application'
       jobs: 
