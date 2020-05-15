@@ -71,7 +71,7 @@ stages:
         - publish: '$(Build.ArtifactStagingDirectory)'
           artifact: drop
     #####-------------Deploy--------
-      - stage: 'Dev'
+    - stage: 'Dev'
       displayName: 'Deploy to the dev environment'
       dependsOn: Build
       condition: |
